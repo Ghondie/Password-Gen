@@ -39,12 +39,12 @@ function writePassword() {
       randPass.push(randChar);
     }
 
-    // console.log(optionsArr);
+    //console.log(optionsArr);
     
   var password = randPass //generatePassword();
   var passwordText = document.querySelector("#password");
 
-  passwordText.value = password;
+  passwordText.value = password.join('');
 
 }
 

@@ -9,18 +9,7 @@ var generateBtn = document.querySelector("#generate");
 
 // making the choices for password imput
 var optionsArr = []
-  /*var all = special + numeric + alpha + caps;
-  var a = special + numeric + alpha;
-  var b = special + numeric + caps;
-  var c = special + alpha + caps;
-  var d = numeric + alpha + special;
-  var e = special + numeric;
-  var f = special + caps;
-  var g = special + special;
-  var h = numeric + alpha;
-  var j = numeric + special;
-  var k = alpha + special;*/
-  
+
 //console.log (all.split(""))
 // Write password to the #password input
 function writePassword() {
@@ -29,13 +18,7 @@ function writePassword() {
         var confirmSpecial = confirm("Will this contain special characters?");
         var confirmCaps = confirm("Will this contain Uppercase letters?");
         var confirmAlpha = confirm("Will this contain Lowercase letters?");
-        
-    // if all 4 are true print all 4
-    // if 3 are true it will print selected 
-    // if 2 are true it will print selected 
-    // if 1 are true it will print selected 
-    // math.random to randomize it
-
+// making all the possabilitys
     if (confirmNumeric) {
       optionsArr = optionsArr.concat(numeric)
     }
@@ -48,9 +31,7 @@ function writePassword() {
     if (confirmAlpha){
       optionsArr = optionsArr.concat(alpha)
     }
-    //i already got my array of all options in optionsArr
-    //[0,1,2,3,4,5,6,7,8,9,!,$,^,&,*,-,=,+,_,?,A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z]
-    // x amount charachters as a password
+
     var randPass = []
     for (var i = 0; i < enter; i++) {
       //so for here enter prompt numbrs
